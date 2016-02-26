@@ -1,8 +1,8 @@
 {
     "ecmaFeatures": {
-            "modules": true,
-            "jsx": true,
-            "experimentalObjectRestSpread": true
+        "modules": true,
+        "jsx": true,
+        "experimentalObjectRestSpread": true
     },
     "env": {
             "node": true,
