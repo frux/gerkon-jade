@@ -11,5 +11,11 @@
     "gerkon"
   ],
   "author": "frux <qdinov@yandex.ru>",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "dependencies": {
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.2.0"
+  }
 }
