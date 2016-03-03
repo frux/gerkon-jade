@@ -11,7 +11,6 @@ module.exports = function(req, res){
 				if(err){
 					return reject(err);
 				}
-				res.render(source, data);
 				res.send(jade.compile(source, {
 					filename: sourcePath,
 					pretty: '\t'
