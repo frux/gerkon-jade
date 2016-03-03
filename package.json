@@ -1,6 +1,6 @@
 {
   "name": "gerkon-jade",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Jade middleware for Gerkon",
   "main": "index.js",
   "scripts": {
