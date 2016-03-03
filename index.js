@@ -3,7 +3,7 @@ const jade = require('jade'),
 
 module.exports = function(req, res){
 	res.render = function(source, data){
-		res.end(jade.compile(source)(data));
+		res.send(jade.compile(source)(data));
 	};
 	res.renderTemplate = function(sourcePath, data){
 		return new Promise((resolve, reject) => {
@@ -12,6 +12,10 @@ module.exports = function(req, res){
 					return reject(err);
 				}
 				res.render(source, data);
+				res.send(jade.compile(source, {
+					filename: sourcePath,
+					pretty: '\t'
+				})(data));
 				resolve();
 			});
 		});

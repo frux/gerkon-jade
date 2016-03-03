@@ -5,18 +5,18 @@ const jade = require('../index'),
 	path = require('path'),
 	assert = require('assert');
 
-function runRender(source, data, end){
+function runRender(source, data, send){
 	let req = {},
-		res = {end};
+		res = {send};
 
 	jade(req, res);
 
 	res.render(source, data);
 }
 
-function runRenderTemplate(sourcePath, data, end){
+function runRenderTemplate(sourcePath, data, send){
 	let req = {},
-		res = {end};
+		res = {send};
 
 	jade(req, res);
 
